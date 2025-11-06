@@ -13,13 +13,42 @@ Constraints:
 
 ---
 
-## Reference Screens
+## Reference Screens & Notes
 
-Use the provided designs as your only source of truth.
+Use the provided designs as your only source of truth.  
+The brief notes below are descriptive (what the UI appears to convey), not prescriptive (how it must work). If something is unclear, make a sensible call and implement your decision.
 
 | Assets                                        | Asset Review                                             | Comments View                                                      |
 | --------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------ |
 | ![Assets page](./docs/images/assets-page.png) | ![Asset Review](./docs/images/asset-review-overview.png) | ![Assets Review comments](./docs/images/asset-review-comments.png) |
+
+### 1) Assets (collection view)
+
+* Display a grid of asset cards.
+* Each card should display the asset's status, creator name/avatar, and deliverable title.
+* Assets are grouped by status.
+* Filters exist to switch between workflow stages.
+* Clicking a card opens the **Asset Review** screen for that item
+
+
+### 2) Asset Review — Overview
+
+* The screen is split into **two panels**:
+  * Left panel:
+    * Displays the asset's media and metadata.
+    * Includes a top bar with the asset's status and an "Edit Status" action.
+  * Right panel (**Overview** tab):
+    * Displays brand and brief metadata.
+    * Shows deliverable info.
+    * Has a section titled **“Caption & Sound Instructions”**.
+
+
+### 3) Asset Review — Messages
+
+* Same two-pane layout; **right tab is “Messages.”**
+* Shows a **conversation thread** with participant avatars/names, **timestamps**, and **inline link previews** (e.g., a URL rendered as a chip).
+* The composer includes a **text input** and an **upload/submit button**.
+
 
 ---
 
