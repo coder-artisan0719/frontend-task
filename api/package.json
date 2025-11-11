@@ -1,15 +1,15 @@
 {
-  "name": "kyra-frontend-task",
-  "private": true,
-  "scripts": {
-    "dev": "nitro dev"
-  },
-  "devDependencies": {
-    "h3": "^1.15.4",
-    "nitropack": "^2.12.4",
-    "unimport": "^5.5.0"
-  },
-  "dependencies": {
-    "zod": "^4.1.12"
-  }
+   "name": "kyra-frontend-task",
+   "private": true,
+   "scripts": {
+      "dev": "nitro dev",
+      "build": "nitro build",
+      "start": "node .output/server/index.mjs"
+   },
+   "dependencies": {
+      "nitropack": "^2.12.4",
+      "h3": "^1.15.4",
+      "unimport": "^5.5.0",
+      "zod": "^4.1.12"
+   }
 }
